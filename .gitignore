@@ -17,6 +17,7 @@ Release/
 *.exp
 *.tlog
 *.log
+build/
 
 # Pastas de saída geradas pelo Visual Studio
 [Oo]ut/

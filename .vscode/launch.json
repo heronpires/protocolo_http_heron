@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MinGW: depurar protocolo_http",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}\\build\\protocolo_http.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\Users\\2026108422\\scoop\\apps\\mingw\\current\\bin\\gdb.exe",
+            "preLaunchTask": "MinGW: compilar protocolo_http (C++23)",
+            "setupCommands": [
+                {
+                    "description": "Habilita impressão formatada no GDB",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

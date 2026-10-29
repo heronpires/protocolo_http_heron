@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "MinGW: compilar protocolo_http (C++23)",
+            "command": "C:\\Users\\2026108422\\scoop\\apps\\mingw\\current\\bin\\g++.exe",
+            "args": [
+                "-std=c++23",
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "${workspaceFolder}\\protocolo_http.cpp",
+                "-lws2_32",
+                "-lwinhttp",
+                "-lstdc++exp",
+                "-o",
+                "${workspaceFolder}\\build\\protocolo_http.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compila o projeto com MinGW GCC em C++23."
+        },
+        {
+            "label": "MinGW: executar protocolo_http",
+            "type": "shell",
+            "command": "${workspaceFolder}\\build\\protocolo_http.exe",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": "MinGW: compilar protocolo_http (C++23)",
+            "problemMatcher": []
+        }
+    ]
+}

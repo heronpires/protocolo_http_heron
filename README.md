@@ -54,6 +54,18 @@ Pela linha de comando, com o MSVC já configurado:
 cl /std:c++latest /EHsc /W3 /Fe:protocolo_http.exe protocolo_http.cpp
 ```
 
+### VS Code com MinGW
+
+O repositório inclui configuração pronta para o MinGW instalado em
+`C:\Users\2026108422\scoop\apps\mingw\current\bin`:
+
+- `Ctrl+Shift+B` compila com GCC em C++23.
+- **Executar tarefa** → `MinGW: executar protocolo_http` compila e executa.
+- `F5` compila e inicia a depuração com GDB.
+
+Se o MinGW estiver instalado em outro caminho, ajuste `command`, `compilerPath` e
+`miDebuggerPath` nos arquivos da pasta `.vscode`.
+
 ## Observações
 
 - Os testes 1, 2 e 4 acessam a internet (`example.com`), portanto dependem de rede liberada e,
